@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120d1f" />
+  <title>Untuk Kamu ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <header class="hero section" id="home">
+    <nav class="nav glass">
+      <a class="logo" href="#home">For You Erlinda Sari Harahap ❤️</a>
+      <div class="nav-links">
+        <a href="#letter">Surat</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#timeline">Cerita Kita</a>
+      </div>
+    </nav>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">Sebuah halaman kecil untuk orang yang paling spesial</p>
+      <h1>Hai, <span id="partnerName">Sayang</span> ✨</h1>
+      <p class="hero-copy">
+        Aku membuat tempat kecil ini untuk menyimpan sedikit cerita,
+        sedikit kenangan, dan banyak rasa sayang untuk sayangku ❤️
+      </p>
+      <div class="hero-actions">
+        <button class="btn primary" id="openBtn">Buka ini sayangg 💝</button>
+        <button class="btn secondary" id="musicBtn">Putar Musik ♪</button>
+      </div>
+    </div>
+
+    <a href="#letter" class="scroll-indicator" aria-label="Scroll ke bawah">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal">
+        <span>01</span>
+        <h2>Surat untuk Kamu</h2>
+      </div>
+
+      <article class="letter-card glass reveal">
+        <div class="wax-seal">♥</div>
+        <h3>Untuk orang favoritku,</h3>
+        <p id="typedLetter"></p>
+        <p class="signature">Dengan penuh cinta,<br><strong id="senderName">Aku</strong></p>
+      </article>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading reveal">
+        <span>02</span>
+        <h2>Galeri Kenangan</h2>
+      </div>
+
+      <!-- <div class="gallery-grid">
+        <figure class="memory-card reveal">
+          <div class="photo-placeholder gradient-one">Foto Kita 1</div>
+          <figcaption>Hari sederhana yang terasa istimewa.</figcaption>
+        </figure>
+        <figure class="memory-card reveal">
+          <div class="photo-placeholder gradient-two">Foto Kita 2</div>
+          <figcaption>Senyummu selalu menjadi bagian favoritku.</figcaption>
+        </figure>
+        <figure class="memory-card reveal">
+          <div class="photo-placeholder gradient-three">Foto Kita 3</div>
+          <figcaption>Semoga masih ada ribuan cerita setelah ini.</figcaption>
+        </figure>
+        <figure class="memory-card reveal">
+          <div class="photo-placeholder gradient-four">Foto Kita 4</div>
+          <figcaption>Terima kasih sudah berjalan bersamaku.</figcaption>
+        </figure>
+      </div> -->
+<div class="gallery-grid">
+  <figure class="memory-card reveal">
+    <img
+      src="assets/photo1.jpeg"
+      alt="Foto kenangan kita pertama"
+      class="memory-photo"
+    />
+    <figcaption>Hari sederhana yang terasa istimewa.</figcaption>
+  </figure>
+
+  <figure class="memory-card reveal">
+    <img
+      src="assets/photo2.jpeg"
+      alt="Foto kenangan kita kedua"
+      class="memory-photo"
+    />
+    <figcaption>Senyummu selalu menjadi bagian favoritku.</figcaption>
+  </figure>
+
+  <figure class="memory-card reveal">
+    <img
+      src="assets/photo3.jpeg"
+      alt="Foto kenangan kita ketiga"
+      class="memory-photo"
+    />
+    <figcaption>Semoga masih ada ribuan cerita setelah ini.</figcaption>
+  </figure>
+
+  <figure class="memory-card reveal">
+    <img
+      src="assets/photo4.jpeg"
+      alt="Foto kenangan kita keempat"
+      class="memory-photo"
+    />
+    <figcaption>Terima kasih sudah berjalan bersamaku.</figcaption>
+  </figure>
+</div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading reveal">
+        <span>03</span>
+        <h2>Cerita Kita</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <time>Pertama Kenal</time>
+            <h3>Awal dari semuanya</h3>
+            <p>Awalnya mungkin biasa saja, tetapi ternyata kamu menjadi seseorang yang sangat berarti.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <time>Pertama Jalan</time>
+            <h3>Hari yang selalu kuingat</h3>
+            <p>Ada sedikit gugup, banyak tawa, dan satu kenangan yang tidak ingin kulupakan.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <time>Hari Ini</time>
+            <h3>Masih memilih kamu</h3>
+            <p>Setelah semua cerita yang kita lewati, aku masih ingin membuat lebih banyak kenangan bersamamu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section counter-section">
+      <div class="counter-card glass reveal">
+        <p>Berasa ngga sih dari pertama kita ketemu kita udah</p>
+        <div class="counter" id="counter">
+          <div><strong id="days">0</strong><span>Hari</span></div>
+          <div><strong id="hours">0</strong><span>Jam</span></div>
+          <div><strong id="minutes">0</strong><span>Menit</span></div>
+          <div><strong id="seconds">0</strong><span>Detik</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surprise-section">
+      <div class="surprise-card reveal">
+        <p>Sebelum halaman ini berakhir...</p>
+        <h2>Ada satu hal lagi buat kamu dutt.</h2>
+        <button class="btn primary large" id="surpriseBtn">Klik Hadiahnya 🎁</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Dibuat Khusus Untuk Erlinda Sari Harahap ❤️ Copyright @parolend 2026
+  </footer>
+
+  <div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content glass">
+      <button class="close-modal" id="closeModal" aria-label="Tutup">×</button>
+      <div class="gift-icon">💖</div>
+      <h2>I Love You</h2>
+      <p>
+        Terima kasih sudah hadir, bertahan, dan menjadi bagian indah dalam hidupku.
+        Semoga kita selalu punya alasan untuk saling memilih.
+      </p>
+      <button class="btn primary" id="confettiBtn">Peluk Sini Sayangkuuu 🤍</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
